@@ -9,3 +9,7 @@ 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
 7. set environment variable : export FLASK_APP='application.py'
 8. run flask application : flask run
 9. initialize git repo : git init
+
+git add .
+git commit -m 'commento su quello che hai cambiato'
+git push origin main # dove main è il nome della branch

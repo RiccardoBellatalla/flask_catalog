@@ -1,6 +1,1 @@
-from flask import Flask
-application = Flask(__name__)
-
-@application.route('/')
-def hello_world():
-    return 'test1'
+from app import application #original tutorial was ".. import app" but AWS ElasticBeanstalk needs "application ="
