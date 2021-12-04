@@ -1,3 +1,5 @@
+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
+
 1. install VENV : python3 -m venv nome_virtual_venv
 2. activate VENV : source nome_virtual_venv/bin/activate
 3. instal Flask in VENV : pip3 install flask
