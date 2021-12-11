@@ -1,4 +1,6 @@
 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
+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
+
 
 1. install VENV : python3 -m venv nome_virtual_venv
 2. activate VENV : source nome_virtual_venv/bin/activate

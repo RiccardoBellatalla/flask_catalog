@@ -15,8 +15,20 @@ class User(db.Model):
 
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    #define products field to be store in db
+    sku_seller = db.Column(db.String(64), index=True, unique=True)
+    ean_code = db.Column(db.String(16), index=True, unique=False)
+    brand = db.Column(db.String(64), index=True, unique=False)
+    product_title = db.Column(db.String(128), index=False, unique=False)
+    product_description = db.Column(db.String(2048), index=False, unique=False)
+    product_price = db.Column(db.Numeric(10,2), unique=False)
+    stock = db.Column(db.Integer, unique=False)
+    img_1 = db.Column(db.String(500), index=False, unique=True)
+    carrier = db.Column(db.String(64), index=False, unique=False)
+    shipping_price = db.Column(db.Numeric(10,2), unique=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
+    def __repr__(self):
+        return '<Product {}>'.format(self.sku_seller)
 
 #    body = db.Column(db.String(140))
 #    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
