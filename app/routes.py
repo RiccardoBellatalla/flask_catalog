@@ -34,10 +34,10 @@ def login():
 def connection():
     import pymysql
     conn = pymysql.connect(
-        host='aahii1sxeminbr.cyc36tyntwzy.us-east-2.rds.amazonaws.com',
+        host='catalog.cyc36tyntwzy.us-east-2.rds.amazonaws.com',
         port=3306,
         user='rbellat',
-        password='!NZriccardo',
-        db='ebdb'
+        password='Alfa1234!',
+        db='catalog'
     )
 
