@@ -28,3 +28,16 @@ def login():
             form.username.data, form.remember_me.data))
         return redirect(url_for('index'))
     return render_template('login.html', title='Sign In', form=form)
+
+
+@app.route('/connection')
+def connection():
+    import pymysql
+    conn = pymysql.connect(
+        host='aahii1sxeminbr.cyc36tyntwzy.us-east-2.rds.amazonaws.com',
+        port=3306,
+        user='rbellat',
+        password='!NZriccardo',
+        db='ebdb'
+    )
+
